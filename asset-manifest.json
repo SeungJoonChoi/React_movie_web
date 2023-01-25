@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/react_movie_web.git/static/js/main.3a15c021.js",
-    "index.html": "/react_movie_web.git/index.html",
-    "main.3a15c021.js.map": "/react_movie_web.git/static/js/main.3a15c021.js.map"
+    "main.js": "/react_movie_web/static/js/main.3a15c021.js",
+    "index.html": "/react_movie_web/index.html",
+    "main.3a15c021.js.map": "/react_movie_web/static/js/main.3a15c021.js.map"
   },
   "entrypoints": [
     "static/js/main.3a15c021.js"
