@@ -14,17 +14,26 @@
   font-weight: 300;
 }
 
+.home {
+  display: grid;
+  grid-gap: 80px;
+  padding: 50px;
+  width: 95%;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.home a {
+  margin-bottom: 5px;
+  font-size: 52px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
 .movie {
   display: grid;
   grid-gap: 100px;
   padding: 50px;
-  width: 100%;
+  width: 95%;
   padding-top: 70px;
-}
-
-@media screen and (max-width: 1090px) {
-  .movie {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
 }

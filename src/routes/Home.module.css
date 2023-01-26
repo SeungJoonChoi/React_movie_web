@@ -17,10 +17,17 @@
   display: grid;
   grid-gap: 80px;
   padding: 50px;
-  width: 100%;
-  /* padding-top: 70px; */
+  width: 95%;
+  padding-top: 70px;
   grid-template-columns: 1fr;
   text-align: center;
+}
+
+.home a {
+  margin-bottom: 5px;
+  font-size: 52px;
+  color: #2c2c2c;
+  text-decoration: none;
 }
 
 .movies {
@@ -28,7 +35,7 @@
   grid-template-columns: repeat(3, minmax(400px, 1fr));
   grid-gap: 80px;
   padding: 50px;
-  width: 80%;
+  width: 95%;
   padding-top: 70px;
 }
 

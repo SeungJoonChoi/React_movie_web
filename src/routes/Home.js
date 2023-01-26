@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Movies from "../components/Movies";
 import styles from "./Home.module.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +24,9 @@ function Home() {
         <h1 className={styles.loader}>Loading...</h1>
       ) : (
         <div>
-          <h1 className={styles.home}>test</h1>
+          <h1 className={styles.home}>
+            <Link to="/">My Movie Web</Link>
+          </h1>
           <div className={styles.movies}>
             {movies.map((movie) => (
               <Movies
