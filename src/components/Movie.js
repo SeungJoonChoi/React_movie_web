@@ -14,19 +14,19 @@ function Movie({
     <div className={styles.movie}>
       <img src={coverImg} alt={title} className={styles.movie__img} />
       <div>
-        <h1>{title}</h1>
-        <h3>Year: {year}</h3>
-        <h3>Rating: {rating}</h3>
-        <h3>Runtime: {runtime}</h3>
+        <h1 className={styles.movie__title}>{title}</h1>
+        <h2 className={styles.movie__year}>Year: {year}</h2>
+        <h2 className={styles.movie__year}>Rating: {rating}</h2>
+        <h2 className={styles.movie__year}>Runtime: {runtime}</h2>
         <p>{description}</p>
-        <h3>
+        <ul className={styles.movie__genres}>
           Genres:{" "}
           {genres.map((g, i) => (
-            <span key={i}>
+            <li key={i}>
               {i + 1 === genres.length ? <span>{g}</span> : <span>{g}, </span>}
-            </span>
+            </li>
           ))}
-        </h3>
+        </ul>
       </div>
     </div>
   );

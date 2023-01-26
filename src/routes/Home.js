@@ -22,18 +22,21 @@ function Home() {
       {loading ? (
         <h1 className={styles.loader}>Loading...</h1>
       ) : (
-        <div className={styles.movies}>
-          {movies.map((movie) => (
-            <Movies
-              key={movie.id}
-              id={movie.id}
-              coverImg={movie.medium_cover_image}
-              title={movie.title}
-              year={movie.year}
-              summary={movie.summary}
-              genres={movie.genres}
-            />
-          ))}
+        <div>
+          <h1 className={styles.home}>test</h1>
+          <div className={styles.movies}>
+            {movies.map((movie) => (
+              <Movies
+                key={movie.id}
+                id={movie.id}
+                coverImg={movie.medium_cover_image}
+                title={movie.title}
+                year={movie.year}
+                summary={movie.summary}
+                genres={movie.genres}
+              />
+            ))}
+          </div>
         </div>
       )}
     </div>
